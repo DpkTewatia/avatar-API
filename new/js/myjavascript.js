@@ -209,8 +209,7 @@ setTimeout(function () {
 
 var innerDivChat = document.querySelectorAll(".vendor-wrapper a");
             innerDivChat.forEach(function(el){
-             if (/apple|webOS|iPhone|iPad/i.test(navigator.userAgent)) {
-                   
+             if (/webOS|iPhone|iPad/i.test(navigator.userAgent)) {
                         el.setAttribute("href", "https://apps.apple.com/us/app/go-pure-app/id1558129667");
                   }else{
                         el.setAttribute("href", "https://play.google.com/store/apps/details?id=com.mcn.mcnecomandroid");
