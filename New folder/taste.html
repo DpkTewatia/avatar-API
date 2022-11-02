@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go Pure</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="css/aos.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/mystylesheet.css">
+</head>
+<body>
+
+<div class="topbar" id="TopHeader"></div>
+
+<header class="main-header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+		<img src="images/gopure_logo.png" class="img-fluid logo">
+	</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="taste.html">Taste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-team.html">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.php">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	</div>
+</header>
+<div class="clearfix"></div>
+<section class="inner-slider taste-slider-bg">
+		<div class="slider-heading aos-init aos-animate" data-aos="fade-in">
+            Taste
+        </div>
+</section>
+
+<section class="product-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="product-select">
+                <div class="form-group mb-5 d-flex">
+                    <label for="selectCategory" class="pt-2 text-center d-block">Select Category</label>
+                        <select id="selectCategory"  class="form-select w-100" onchange="selectProduct(this);">
+                            <option selected value="allProducts">All Products</option>
+                            <option value="Cookies">Cookies</option>
+                            <option value="Dry Fruits">Dry Fruits</option>
+                            <option value="Masala">Masala</option>
+                            <option value="Namkeen">Namkeen</option>
+                            <option value="Petha">Petha</option>
+                            <option value="Snacks">Snacks</option>
+                            <option value="Spicy">Spicy</option>
+                            <option value="Sweets">Sweets</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="container aos-init aos-animate allProducts" data-aos="fade-up">
+     <div class="row g-4" id="DivAllProducts">
+           <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-butter-chocolate-nut-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Butter Chocolate Nut Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+       
+        <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/petha-gulab-laddu.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                    Petha Gulab Laddu
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/baba-thakur-das/baba-thakur-das-chaklt-barfi.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Chaklt Barfi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Baba Thakur Das, Alwar, <a class="text-link" href="rajasthan.html">Rajasthan</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-butter-coffee-kaju-cookies.jpg" class="product-img img-fluid" alt="">   
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Butter Coffee Kaju Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+        
+        <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Ram-Chandra-Sahai/gur-spring-roll-gajak.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Gur Spring Roll Gajak
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Ram Chandra Sahai, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-desi-ghee-atta-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Desi Ghee Atta Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/kesardrai-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Kesar Dry Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+ 
+
+     <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Sugar-free-desi-ghee-atta-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Sugar Free Desi Ghee Atta Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+
+       <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Donda-barfi-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Donda Barfi Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/baba-thakur-das/baba-thakur-das-shohan-halwa.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Shohan Halwa
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Baba Thakur Das, Alwar, <a class="text-link" href="rajasthan.html">Rajasthan</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Laal-khand-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Laal (Khand) Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div> 
+
+      <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Daboo-Namkeen/kaju-dalsev.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Kaju Dalsev
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Dabboo Dalsev, Aligarh, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       
+   
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Gulaab-laddu-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Gulaab Laddu Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div> 
+
+
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-cookies-butter-pista-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Butter Pista Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+        
+         <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/White-plain-cherry.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 White Plain Cherry
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/baba-thakur-das/baba-thakur-das-kalanand.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Kalanand
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Baba Thakur Das, Alwar, <a class="text-link" href="rajasthan.html">Rajasthan</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+     <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Vanilla-muffin-butter-bite.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Vanilla Muffin Butter Bite
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Mango-cherry-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Mango Cherry Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div> 
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/kaju-dalmoth-bhimsain-baij-nath.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Kaju Dalmoth Namkeen
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+  
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/gud-special-gajak.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Gud Special Gajak
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+      
+    <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/plain-dalmoth.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Plain Dalmoth
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Plain Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Melon-kancha-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Melon (Kancha) Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+  
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-sugar-free-whole -wheat-elachi-biscuit.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Sugar Free Whole Wheat Elachi Biscuit
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+       <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Rasbhari-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Rasbhari Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/mini-kachori.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Mini Kachori / Dry Kachori
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+    
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Plain-anguri-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Plain Anguri Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Milk-maid-cashew-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Milk Maid Cashew Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Kesar-cherry-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+              Kesar Cherry Petha
+            </div>
+             <div class="product-seller">
+                <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+    
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Daboo-Namkeen/badam-mixture.webp" class="product-img img-fluid" alt="">
+              </div><div class="product-inner">
+                <div class="product-name">
+                   Badam Mixture
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Dabboo Dalsev, Aligarh, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+    
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-Butter-coconut-biscuit.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Butter Coconut Biscuit
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+        
+        <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Ram-Chandra-Sahai/gur-kaju-patti-gajak.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Gur Kaju Patti Gajak
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Ram Chandra Sahai, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Daboo-Namkeen/dalsev-biji.png" class="product-img img-fluid" alt="">
+              </div><div class="product-inner">
+                <div class="product-name">
+                   Dalsev Biji mixture
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Dabboo Dalsev, Aligarh, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+
+      
+      <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Cranberry-vanilla-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Cranberry Vanilla Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+     <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/achari-mathri.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Achari Mathri / Mathi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-cookies-atta-jeera-cookies.jpg" class="product-img img-fluid" alt=""> 
+            </div><div class="product-inner">
+                <div class="product-name">
+                    Atta Jeera Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+        
+        <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/dry-fruits-soan-halwa.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Dry Fruits Soan Halwa - Pure Desi Ghee
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+       
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Sugar-free-coconut-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Sugar Free Coconut Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+         
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/gajak.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Gajak
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+     
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Choco-nuts-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Choco Nuts Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Daboo-Namkeen/kaju-mixture.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Kaju Mixture
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Dabboo Dalsev, Aligarh, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+       
+  
+    <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Sugar-free-badam-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Sugar Free Badam Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+
+     <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/fariyalisabudana.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Fariyali Sabudana
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/avon-cookies-atta-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                    Atta Cookies
+                </div>
+            <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/chakli.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Chakli
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+      
+      
+      <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Sugar-free-multi-grain-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                   Sugar Free Multi Grain Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Bhim-Sain-Baij Nath/dry-fruit-dalmoth.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Dry Fruit Dalmoth
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Bhim Sain Baij Nath Inventor of Dalmoth, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Butter-almond-biscotti.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Butter Almond Biscotti
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Adarsh/heeng-sev-namkeen.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Heeng Sev Namkeen
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Adarsh Namkeen, Khurja, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Italian-honey-almond-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Italian Honey Almond Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Gokul/meetha-mixture.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Meetha Mixture
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+
+      
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/sohanpapdi.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Sohan Papdi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Gokul/long-sev.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Long Sev
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Butter-namkeen-ajwain-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Butter Namkeen Ajwain Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+   
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/easy-chettinad-chicken-mix.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Easy Chettinad Chicken Mix
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Butter-chocochip-twix-biscuits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+              Butter Chocochip Twix Biscuits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/mathari.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Mathari
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+          <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Fruit-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+              Fruit Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+           <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/baba-thakur-das/baba-thakur-das-keshar-barfi.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Keshar Barfi
+                </div>
+             <div class="product-seller">
+            <strong>Source</strong> Baba Thakur Das, Alwar, <a class="text-link" href="rajasthan.html">Rajasthan</a>
+            </div>
+            </div>
+         </div>
+       </div>
+  
+
+       <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/ChocoFill-pista-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Chocofill Pista Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/madurai-mutton-fry-masala.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Madurai Mutton Fry Masala
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+     <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Almond-pista-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Almond Pista Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+  
+  
+    <div class="col-sm-2 col-md-4 col-lg-3 namkeen">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Gokul/soyastick.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Soya Stick
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Gokul ki Shahi Namkeen, Indore, <a class="text-link" href="madhya-pradesh.html">Madhya Pradesh</a>
+            </div>
+                </div>
+         </div>
+       </div>
+       
+     <div class="col-sm-2 col-md-4 col-lg-3 cookies">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/avon/Milk-made-almond-butter-cookies.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Milk Made Almond Butter Cookies
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Avon Bakers & Confectioners, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/baba-thakur-das/baba-thakur-das-bhuni-brfi.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Bhuni Brfi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Baba Thakur Das, Alwar, <a class="text-link" href="rajasthan.html">Rajasthan</a>
+            </div>
+                </div>
+         </div>
+       </div>
+        
+        <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/kesarburfi-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Kesar Burfi Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha Agra <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/easy-biryani-mix.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Easy Biryani Mix
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+                </div>
+         </div>
+       </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Shagun-Sweets/Ice-Cream-Barfi.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Ice Cream Barfi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Naya Ganj, Ghaziabad, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+     
+     <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/coconut-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Coconut Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha Agra <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div> 
+
+     <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Kallu-Halwali/patisa.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Patisa
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Ganesh Colony, Chandausi, <a class="text-link" href="uttar-pradesh.html"> Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+         <div class="col-sm-2 col-md-4 col-lg-3 Petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/Pan-Petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Pan Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/makhane-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Makhane Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Makhane Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Shagun-Sweets/Kaju-Katli.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Kaju Katli
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Naya Ganj, Ghaziabad, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/lrani-pista-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Lrani Pista Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Lrani Pista Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+        
+        <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Kallu-Halwali/desi-ghee-doda.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Desi Ghee Doda
+                </div>
+             <div class="product-seller">
+            <strong>Source</strong> Ganesh Colony, Chandausi, <a class="text-link" href="uttar-pradesh.html"> Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+      
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/protein-breakfast-mix.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+               Protein Breakfast Mix
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Protein Breakfast Mix Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/chocolate-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Chocolate Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/chia-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+               Chia Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Chia Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+    
+        
+     <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/marina-fish-roast-mix.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+             Marina Fish Roast Mix
+            </div>
+             <div class="product-seller">
+              <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/muskmelon-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+              Muskmelon Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Muskmelon Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/kajusandwhich-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Kaju Sandwhich Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha Agra <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+     <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Kallu-Halwali/Kajukatli.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Kaju katli
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Ganesh Colony, Chandausi, <a class="text-link" href="uttar-pradesh.html"> Uttar Pradesh</a>
+            </div>
+          </div>
+         </div>
+       </div>
+    
+    <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/green-chili-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Green Chili Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Green Chili Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/chikki-peanut-gajak.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Chikki Peanut Gajak
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/ginger-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Ginger Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Ginger Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/pumpkin-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+              Pumpkin Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Pumpkin Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/dela-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Dela Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Dela Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+         <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/sunflower-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+              Sunflower Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Sunflower Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+
+        <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Italian-bread.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Italian Bread
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/mamra-badam-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+             Mamra Badam Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Sunflower Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+      <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/murabba-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Murabba Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Murabba Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+     
+        <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+          <img src="products-img/Dry-fruits/chironji-seeds.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+            <div class="product-name">
+              Chironji Seeds
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Chironji Seeds Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+
+      <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/easy-curry-leaf-chicken-mix.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Easy Curry Leaf Chicken Mix
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+     
+        
+       <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/green-chilli.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Green Chilli
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Green Chilli Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/curry-powder.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Curry Powder
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+        <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Garlic-loaf.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Garlic Loaf
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/madras-fish-masala.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Madras Fish Masala
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+      
+
+      <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/khuscherry-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Khus Cherry Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+     
+    <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/coriander-powder.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Coriander Powder
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+  
+     <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/lemon-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Lemon Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Lemon Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/cumin-powder.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Cumin Powder
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Shagun-Sweets/barfi.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Barfi
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Naya Ganj, Ghaziabad, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/chilli-powder.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Chilli Powder
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/punjabi-mix-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Punjabi Mix Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Punjabi Mix Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/sambar-powder.png" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Sambar Powder
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Chocolate-burst-croissant.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Chocolate Burst Croissant
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/garlic-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Garlic Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Garlic Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 masala">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/thillais-masala/crispy-chicken-mix.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Crispy Chicken Mix
+                </div>
+             <div class="product-seller">
+              <strong>Source</strong> Thillai's, <a class="text-link" href="tamil-nadu.html">Tamil Nadu</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Cheese-croissant.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Cheese Croissant
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+        <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/carrot-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Carrot Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Carrot Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+     <div class="col-sm-2 col-md-4 col-lg-3 petha">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/plain-petha.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Plain Petha
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Cottage-shepherd-pie.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Cottage Shepherd Pie
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/khatta-meetha-nimbu.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Khatta Meetha Nimbu Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Khatta Meetha Nimbu Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Butterscotch-caramel-croissant.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Butterscotch Caramel Croissant
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+     <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/almond-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Almond Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Almond Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/namak-pare-snacks.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Namak Pare Snacks
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/walnuts-white-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Walnuts White Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Walnuts White Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Olive-focaccia-bread.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Olive Focaccia Bread
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    
+
+       <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/red-chilli.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Red Chilli Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Red Chilli Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+   
+         <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Carrot-bread.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Carrot Bread
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+        <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/Cashew-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Cashew Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Cashew Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/mathri-snacks.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Mathri Snacks
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Mathri Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/raisins-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Raisins Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Raisins Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Multi-grain-bread.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Multi Grain Bread
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/anjeer-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Anjeer Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Anjeer Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/namak-pare-snacks.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Namak Pare Snacks
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+      <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/munakka-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Munakka Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Munakka Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+     
+       
+       <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/papdi-snacks.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Papdi Snacks
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Papdi Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-sm-2 col-md-4 col-lg-3 dryfruits">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Dry-fruits/Pista-american-dry-fruits.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Pista American Dry Fruits
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Pista American Dry Fruits, Noida, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Burger-buns.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                Burger-buns (4 Pcs)
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+   
+   <div class="col-sm-2 col-md-4 col-lg-3 spicy">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Pickle-Achar/mango-pickle.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                  Mango Pickle
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Mango Pickle,Delhi, <a class="text-link" href="delhi.html">Delhi</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+     <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/nankhatai.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+               Nankhatai
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Nankhatai, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+  
+
+      <div class="col-sm-2 col-md-4 col-lg-3 sweets">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/Panchhi-Petha/gud-rewari.webp" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Gud Rewari
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Panchhi Petha, Agra, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+    
+      <div class="col-sm-2 col-md-4 col-lg-3 snacks">
+         <div class="product-card"><div class="img-container">
+              <img src="products-img/snacks/Paneer-panini.jpg" class="product-img img-fluid" alt="">
+            </div><div class="product-inner">
+                <div class="product-name">
+                 Paneer Panini
+                </div>
+             <div class="product-seller">
+                  <strong>Source</strong> Namak Pare Snacks, Meerut, <a class="text-link" href="uttar-pradesh.html">Uttar Pradesh</a>
+            </div>
+            </div>
+         </div>
+       </div>
+
+
+
+    </div>
+	</div>
+</section>
+
+
+<div class="clearfix"></div>
+
+<section id="contactSection"></section>
+
+<footer id="footerContent"></footer>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+
+<script type="text/javascript" src="js/myjavascript.js"></script>
+
+</body>
+</html>
